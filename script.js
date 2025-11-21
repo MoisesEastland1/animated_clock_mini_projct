@@ -50,6 +50,13 @@ for(let i=0; i < 60; i++) {
 }
 ctx.restore()
 
+//Get the current time
+const hr = now.getHours() % 12;
+const min = now.getMinutes();
+const sec = now.getSeconds();
+
+console.log(`${hr}:${min}:${sec}`);
+
 
 
 
