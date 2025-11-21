@@ -98,6 +98,7 @@ ctx.restore();
 
 
 ctx.restore(); //save the default state
-}
 
-clock();
+requestAnimationFrame(clock);
+}
+requestAnimationFrame(clock);
