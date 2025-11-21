@@ -71,12 +71,27 @@ ctx.restore();
 //Draw minute hand 
 ctx.save();
 ctx.rotate((Math.PI /30) * min + (Math.PI / 1800) * sec);
-ctx.strokeStyle = '#000000';
+ctx.strokeStyle = '#800000';
 ctx.lineWidth = 8;
 ctx.beginPath();
 ctx.moveTo(-28, 0);
 ctx.lineTo(112, 0);
 ctx.stroke();
+ctx.restore();
+
+//Draw sec hand
+ctx.save();
+ctx.rotate((sec * Math.PI / 30));
+ctx.strokeStyle = '#000000';
+ctx.fillStyle = '#000000';
+ctx.lineWidth = 6;
+ctx.beginPath();
+ctx.moveTo(-30, 0);
+ctx.lineTo(100, 0);
+ctx.stroke();
+ctx.beginPath();
+ctx.arc(0, 0, 10, 0, Math.PI * 2, true);
+ctx.fill();
 ctx.restore();
 
 
