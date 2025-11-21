@@ -61,10 +61,21 @@ console.log(`${hr}:${min}:${sec}`);
 ctx.save();
 ctx.rotate((Math.PI /6) * hr + (Math.PI / 360) * min + (Math.PI / 21600) * sec);
 ctx.strokeStyle = '#800000';
-ctx.lineWidth = 14;
+ctx.lineWidth = 12;
 ctx.beginPath();
 ctx.moveTo(-20, 0);
 ctx.lineTo(80, 0);
+ctx.stroke();
+ctx.restore();
+
+//Draw minute hand 
+ctx.save();
+ctx.rotate((Math.PI /30) * min + (Math.PI / 1800) * sec);
+ctx.strokeStyle = '#000000';
+ctx.lineWidth = 8;
+ctx.beginPath();
+ctx.moveTo(-28, 0);
+ctx.lineTo(112, 0);
 ctx.stroke();
 ctx.restore();
 
