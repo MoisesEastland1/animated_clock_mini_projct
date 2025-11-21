@@ -27,8 +27,30 @@ ctx.restore();
 
 //Draw hour lines
 ctx.save();
-ctx.begin();
+for(let i=0; i < 12; i++) {
+  ctx.beginPath();
+  ctx.rotate(Math.PI / 6);
+ctx.moveTo(100, 0);
+ctx.lineTo(120, 0);
+ctx.stroke();
+}
 ctx.restore()
+
+//Drawn minutes lines
+ctx.save();
+ctx.lineWidth = 4;
+for(let i=0; i < 60; i++) {
+  if(i % 5 !== 0) {
+  ctx.beginPath();
+  ctx.moveTo(117, 0);
+  ctx.lineTo(120, 0);
+  ctx.stroke();
+  }
+  ctx.rotate(Math.PI / 30);
+}
+ctx.restore()
+
+
 
 
 ctx.restore(); //save the default state
