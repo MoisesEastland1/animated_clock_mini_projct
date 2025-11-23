@@ -3,12 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<link rel="stylesheet" href="style.css">
 
   <script src="script.js" defer></script>
   <title>Animated Clock</title>
 </head>
 <body>
   <canvas id="canvas" width="500" height="500"></canvas>
+
+  <div class="card-container">
+
+  <div class="card">
+    <h3>Clock Style</h3>
+    <form>
+      <div class="form-input">
+        <label for="face-color">Face Color</label>
+        <input type="color" value="#f4f4f4" id="face-color"/>
+      </div>
+
+      <div class="form-input">
+        <label for="border-color">Border Color</label>
+        <input type="color" value="#f4f4f4" id="border-color"/>
+      </div>
+
+      <div class="form-input">
+        <label for="line-color">Number Line Color</label>
+        <input type="color" value="#f4f4f4" id="line-color"/>
+      </div>
+
+      <div class="form-input">
+        <label for="large-hands-color">Hour-Minute Hands Color</label>
+        <input type="color" value="#f4f4f4" id="large-hands-color"/>
+      </div>
+
+      <div class="form-input">
+        <label for="sec-hand-color">Second Hand</label>
+        <input type="color" value="#f4f4f4" id="sec-hand-color"/>
+      </div>
+
+      <div class="form-input">
+        <button class="save-btn" id="save-btn" type="submit">Save as Image</button>
+      </div>
+    </form>
+  </div>
+
+  </div>
+
+  
 </body>
 </html>
