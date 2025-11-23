@@ -1,0 +1,58 @@
+body {
+  font-size: 18px;
+}
+
+canvas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  margin-left: 400px;
+}
+
+.card-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.save-btn {
+  background: #333;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card {
+  background: #f4f4f4;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 7px 20px;
+  width: 300px;
+  position: absolute;
+  
+  bottom: -100px;
+  left: 480px;
+}
+
+.form-input {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-right: 10px;
+  font-weight: bold;
+}
